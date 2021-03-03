@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Poppins:wght@200;400&display=swap');
 
 :root {
     --main-gray: #BBBBBB;
     --main-dark-blue: #0018CC;
     --main-red: #FF0059;
+    --main-purple: #D500FF;
+    --main-sky-blue: #0084EE;
 }
 
 /* Base reset */
@@ -73,6 +75,7 @@ ul {
 a {
     text-decoration: none;
     color: var(--main-gray);
+    font-weight: 400;
 }
 
 img {
@@ -95,6 +98,7 @@ img {
 .nav-list {
     display: flex;
     margin-right: 2rem;
+    font-weight: 400;
 }
 
 @media (max-width: 28.75em) {
@@ -111,6 +115,7 @@ img {
     display: block;
     font-size: 2.2rem;
     padding: 2rem;
+    font-weight: 400;
   }
 
   a:hover {
@@ -127,11 +132,26 @@ img {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(35deg, #1E1E1E, #464646);
+    /* background-image: linear-gradient(35deg, #000888, #5B0088); */
   }
 
 #welcome-section > p {
     font-size: 2em;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-dark-blue);
+    color: var(--main-purple);
+}
+
+/* Projects section */
+
+#projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-sky-blue);
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
 }
